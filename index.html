@@ -3,43 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Control Alt Elite - Coming Soon</title>
+  <title>Control Alt Elite - A Hack Club Partner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000428, #004e92);
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #0d0d0d;
       color: #fff;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      line-height: 1.6;
+    }
+    header {
       text-align: center;
+      padding: 3rem 1rem 1rem;
     }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 500px;
-    }
-
     .logo {
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #1d98f5;
+      border-radius: 6px;
+    }
+    .section h2 {
+      color: #1d98f5;
+      margin-bottom: 0.5rem;
+    }
+    .partner-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 0.5rem;
+    }
+    .partner-logo img {
+      max-height: 40px;
+    }
+    .join-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 0.75rem 1.5rem;
+      background-color: #1d98f5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
-      font-size: 1.5em;
-      color: #00ffff;
-      margin-bottom: 1em;
+      transition: background-color 0.3s;
+    }
+    .join-button:hover {
+      background-color: #1477c4;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <div class="logo">Control Alt Elite</div>
-  <h1>Coming Soon</h1>
-  <p>We’re launching something exciting for teen coders in Saudi Arabia. Stay tuned!</p>
+  <header>
+    <img src="logo.png" alt="Control Alt Elite Logo" class="logo" />
+  </header>
+  <div class="content">
+    <div class="section">
+      <h2>Who Are We?</h2>
+      <p>We are a student-led club, built by students for students. We aim to create a community of learners, builders, and leaders.</p>
+    </div>
+    <div class="section">
+      <h2>Our Partner</h2>
+      <div class="partner-logo">
+        <img src="https://assets.hackclub.com/icon-rounded.png" alt="Hack Club Logo" />
+        <p>We proudly partner with <strong>Hack Club</strong>, a USA-registered non-profit (501(c)(3)).</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Software development and coding</li>
+        <li>Hardware projects and electronics</li>
+        <li>Creative tools and design using Figma Pro</li>
+        <li>Presentation, communication, and public speaking</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Benefits of Joining</h2>
+      <ul>
+        <li>Free access to Figma Pro and other pro tools</li>
+        <li>Certificates of participation where applicable</li>
+        <li>Hands-on project and hardware experience</li>
+        <li>Webinars, hackathons, and workshop opportunities</li>
+        <li>Grants and funding opportunities via Hack Club</li>
+        <li>Merit-based leadership roles within the club</li>
+      </ul>
+    </div>
+    <a href="https://forms.gle/S6sdnX4jwemkvkeF9" class="join-button">Join the Club</a>
+  </div>
+  <footer>
+    &copy; 2025 Control Alt Elite Club | Made with students, for students.
+  </footer>
 </body>
 </html>
