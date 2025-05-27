@@ -5,144 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Control Alt Elite - A Hack Club Partner</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="dist/output.css">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 font-inter">
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-end h-16 items-center">
-        <div class="flex space-x-8">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#partner" class="nav-link">Partner</a>
-          <a href="#learn" class="nav-link">Learn</a>
-          <a href="#benefits" class="nav-link">Benefits</a>
-          <a href="https://forms.gle/S6sdnX4jwemkvkeF9" 
-             class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-dark transition-colors duration-300">
-            Join Now
-          </a>
+<body>
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="#" class="nav-logo">
+        <div class="text-logo">
+          <span class="partner">A Hack Club Partner</span>
         </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#partner">Partner</a>
+        <a href="#learn">Learn</a>
+        <a href="#benefits">Benefits</a>
+        <a href="https://forms.gle/S6sdnX4jwemkvkeF9" class="nav-join">Join Now</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 pb-12 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1),transparent_70%)] animate-[spin_20s_linear_infinite]"></div>
-    
-    <div class="relative z-10 space-y-8 max-w-4xl mx-auto">
-      <div class="text-logo hero-logo animate-float">
-        <span class="text-6xl font-space font-bold text-white">Control</span>
-        <span class="text-6xl font-space font-bold text-primary">Alt</span>
-        <span class="text-6xl font-space font-bold text-elite">Elite</span>
-        <span class="text-xl text-white/90 mt-4 block">A Hack Club Partner</span>
-      </div>
-      
-      <p class="text-xl text-white/90 max-w-2xl mx-auto">
-        We are a community of student hackers building the future together
-      </p>
-      
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="https://forms.gle/S6sdnX4jwemkvkeF9" 
-           class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-primary hover:bg-primary-dark transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-          Join Our Club
-        </a>
-        <a href="#learn" 
-           class="inline-flex items-center px-8 py-3 border border-white/20 text-lg font-medium rounded-md text-white hover:bg-white/10 transition-all duration-300">
-          Learn More
-        </a>
-      </div>
+  <section class="hero">
+    <div class="text-logo hero-logo">
+      <span class="control">Control</span>
+      <span class="alt">Alt</span>
+      <span class="elite">Elite</span>
+      <span class="partner">A Hack Club Partner</span>
     </div>
+    <p>We are a community of student hackers building the future together</p>
+    <a href="https://forms.gle/S6sdnX4jwemkvkeF9" class="join-button">Join Our Club</a>
   </section>
-
-  <!-- Content Sections -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
-    <div id="about" class="section-card">
-      <h2 class="section-title">Who Are We?</h2>
-      <div class="prose prose-lg">
-        <p>We are a student-led club, built by students for students. We aim to create a community of learners, builders, and leaders who are passionate about technology and innovation.</p>
-        <p>Every day, our members gather to make things with code, whether you're a beginner programmer or have years of experience, there's a place for you at Control Alt Elite.</p>
+  
+  <div class="content">
+    <div id="about" class="section">
+      <h2>Who Are We?</h2>
+      <p>We are a student-led club, built by students for students. We aim to create a community of learners, builders, and leaders who are passionate about technology and innovation.</p>
+      <p>Every day, our members gather to make things with code, whether you're a beginner programmer or have years of experience, there's a place for you at Control Alt Elite.</p>
+    </div>
+    
+    <div id="partner" class="section">
+      <h2>Our Partner</h2>
+      <div class="partner-logo">
+        <img src="https://assets.hackclub.com/icon-rounded.png" alt="Hack Club Logo" />
+        <p>We proudly partner with <strong>Hack Club</strong>, a USA-registered non-profit (501(c)(3)) dedicated to empowering the next generation of makers. Together, we're building a global community of student hackers.</p>
       </div>
     </div>
-
-    <div id="partner" class="section-card">
-      <h2 class="section-title">Our Partner</h2>
-      <div class="flex items-center gap-6 p-6 bg-gray-50 rounded-lg">
-        <img src="https://assets.hackclub.com/icon-rounded.png" alt="Hack Club Logo" class="h-16 w-16 transition-transform duration-300 hover:scale-110" />
-        <p class="text-gray-700">
-          We proudly partner with <strong>Hack Club</strong>, a USA-registered non-profit (501(c)(3)) dedicated to empowering the next generation of makers. Together, we're building a global community of student hackers.
-        </p>
-      </div>
-    </div>
-
-    <div id="learn" class="section-card">
-      <h2 class="section-title">What You'll Learn</h2>
-      <ul class="space-y-4">
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Software development and coding through hands-on projects</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Hardware projects and electronics with real-world applications</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Creative tools and design using Figma Pro</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Presentation, communication, and public speaking skills</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Collaboration and teamwork in a supportive environment</span>
-        </li>
+    
+    <div id="learn" class="section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Software development and coding through hands-on projects</li>
+        <li>Hardware projects and electronics with real-world applications</li>
+        <li>Creative tools and design using Figma Pro</li>
+        <li>Presentation, communication, and public speaking skills</li>
+        <li>Collaboration and teamwork in a supportive environment</li>
       </ul>
     </div>
-
-    <div id="benefits" class="section-card">
-      <h2 class="section-title">Benefits of Joining</h2>
-      <ul class="space-y-4">
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Free access to Figma Pro and other professional tools</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Certificates of participation for your portfolio</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Hands-on project and hardware experience</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Webinars, hackathons, and workshop opportunities</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Grants and funding opportunities via Hack Club</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Merit-based leadership roles within the club</span>
-        </li>
-        <li class="flex items-start gap-3 group">
-          <span class="text-primary group-hover:translate-x-1 transition-transform">→</span>
-          <span>Connect with other student hackers worldwide</span>
-        </li>
+    
+    <div id="benefits" class="section">
+      <h2>Benefits of Joining</h2>
+      <ul>
+        <li>Free access to Figma Pro and other professional tools</li>
+        <li>Certificates of participation for your portfolio</li>
+        <li>Hands-on project and hardware experience</li>
+        <li>Webinars, hackathons, and workshop opportunities</li>
+        <li>Grants and funding opportunities via Hack Club</li>
+        <li>Merit-based leadership roles within the club</li>
+        <li>Connect with other student hackers worldwide</li>
       </ul>
     </div>
   </div>
-
-  <footer class="bg-white border-t border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="text-center text-gray-500">
-        &copy; 2025 Control Alt Elite Club | Made with students, for students.
-      </div>
-    </div>
+  
+  <footer>
+    &copy; 2025 Control Alt Elite Club | Made with students, for students.
   </footer>
 
   <script src="script.js"></script>
