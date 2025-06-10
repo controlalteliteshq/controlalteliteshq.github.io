@@ -169,3 +169,81 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .join-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section ul li {
+    font-size: 1rem;
+  }
+
+  .partner-logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .memes img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .join-button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+}
