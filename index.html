@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control Alt Elite – STEM Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-content">
+      <div class="nav-logo">Control Alt Elite</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#partner">Partner</a>
+        <a href="#learn">Learn</a>
+        <a href="#benefits">Benefits</a>
+        <a href="https://forms.gle/S6sdnX4jwemkvkeF9" class="nav-join">Join</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content card-bg-text">
+      <h1>Empowering the Next Generation of Innovators</h1>
+      <p>Control Alt Elite is a professional STEM club dedicated to fostering curiosity, collaboration, and excellence in science, technology, engineering, and mathematics.</p>
+      <a href="#join" class="join-button">Join Now</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>We are a community of students and professionals passionate about advancing STEM education and innovation. Our mission is to provide a collaborative environment where members can learn, grow, and make a meaningful impact in the world of science and technology.</p>
+    </section>
+
+    <section id="partner" class="section">
+      <h2>Our Partner</h2>
+      <div class="partner-logo">
+        <img src="https://assets.hackclub.com/icon-rounded.png" alt="Partner Logo">
+        <p>In partnership with leading organizations, we offer our members access to exclusive resources, mentorship, and opportunities for growth.</p>
+      </div>
+    </section>
+
+    <section id="learn" class="section">
+      <h2>What You'll Learn</h2>
+      <ul class="learn-list">
+        <li>Advanced scientific principles and research methods</li>
+        <li>Modern programming and computational thinking</li>
+        <li>Engineering design and real-world problem solving</li>
+        <li>Mathematical modeling and data analysis</li>
+        <li>Professional communication and leadership skills</li>
+        <li>Collaboration in multidisciplinary teams</li>
+      </ul>
+    </section>
+
+    <section id="benefits" class="section">
+      <h2>Member Benefits</h2>
+      <ul class="benefits-list">
+        <li>Access to state-of-the-art tools and resources</li>
+        <li>Certificates and recognition for achievements</li>
+        <li>Hands-on projects and research opportunities</li>
+        <li>Participation in conferences and competitions</li>
+        <li>Grants and funding for innovative ideas</li>
+        <li>Networking with industry professionals</li>
+      </ul>
+    </section>
+
+    <section id="join" class="section join-section">
+      <h2>Become a Member</h2>
+      <p>Ready to take the next step in your STEM journey? Join Control Alt Elite and connect with a network of passionate innovators.</p>
+      <a href="https://forms.gle/S6sdnX4jwemkvkeF9" class="join-button">Join the Club</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content card-bg-text">
+      <span>&copy; 2025 Control Alt Elite. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+        themeToggle.textContent = '☀️';
+      } else {
+        root.removeAttribute('data-theme');
+        themeToggle.textContent = '🌙';
+      }
+      localStorage.setItem('theme', theme);
+    }
+    function toggleTheme() {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      setTheme(isDark ? 'light' : 'dark');
+    }
+    if (themeToggle) {
+      themeToggle.addEventListener('click', toggleTheme);
+      // On load, set theme from localStorage or system preference
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
+    }
+  </script>
+</body>
+</html>
